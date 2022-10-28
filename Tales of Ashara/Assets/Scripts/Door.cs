@@ -9,8 +9,8 @@ public class Door : MonoBehaviourPun
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!PhotonNetwork.IsMasterClient)
-            return;
+        //if (!PhotonNetwork.IsMasterClient)
+            //return;
 
         if (collision.CompareTag("Player"))
         {
@@ -20,4 +20,5 @@ public class Door : MonoBehaviourPun
             Debug.Log("player transported");
         }
     }
+
 }
